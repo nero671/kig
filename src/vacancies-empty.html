@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Вакансии (пустые)'
+})
+<body>
+<div class="wrapper">
+    @@include('html/header/header.html', {
+    "class": "active",
+    })
+    <main class="page addition-page spec-page">
+        <div data-observ></div>
+
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__container">
+                <ul>
+                    <li>
+                        <a href="/">
+                            Главная
+                        </a>
+                    </li>
+
+                    <li>
+                        Вакансии
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        @@include('html/components/intro-block/intro-block.html', {
+        "title": "Вакансии",
+        "text": "Компания «К-Индастриал Групп» приглашает профессионалов в сфере поставок электрооборудования. Мы предлагаем конкурентную зарплату, карьерный рост и комфортные условия труда. Просмотрите вакансии и присылайте резюме, мы будем рады рассмотреть вашу кандидатуру.",
+        "src": "images/vac-bg.jpg"
+        })
+
+        <section class="vacancies-text">
+            <div class="vacancies-text__container">
+
+                <h2 class="title vacancies-text__title">
+                    Присоединяйтесь к нашей команде
+                </h2>
+
+                <div class="vacancies-text__wrapper">
+                    <p class="text">
+                        На данный момент в компании нет открытых вакансий.
+                        Если Вас интересует работа в нашей компании, следите
+                        за нашими вакансиями в данном разделе.
+
+                    </p>
+                    <p class="text">
+                        Если Вы хотите работать в нашей компании и считаете, что Ваши навыки
+                        и качества могут заинтересовать нас, заполните форму ниже и прикрепите
+                        свое резюме. Мы обязательно его рассмотрим и, если оно нам покажется интересным, при появлении новых вакансий обязательно свяжемся с Вами.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        @@include('html/form/form.html', {
+        "title": "Отправить резюме",
+        "src": "images/formBg2.png",
+        "file": "Прикрепить резюме"
+        })
+
+    </main>
+    @@include('html/footer/footer.html', {})
+    @@include('html/components/burger-menu/burger-menu.html', {})
+    @@include('html/components/popups/thanks-popup.html', {})
+    @@include('html/components/popups/form-popup.html', {})
+
+</div>
+@@include('html/script.html', {})
+</body>
+</html>

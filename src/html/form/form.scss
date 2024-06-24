@@ -1,0 +1,288 @@
+.form {
+  background-image: url('../images/form-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  padding: 80px 0;
+
+  &__title {
+    color: #fff;
+    max-width: 900px;
+
+    @include media(1650) {
+      font-size: 50px;
+      max-width: 700px;
+    }
+  }
+
+  &__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &-control {
+    padding-bottom: 5px;
+    textarea {
+      resize: none;
+    }
+  }
+}
+
+.form-wrapper {
+  display: flex;
+  gap: 30px;
+}
+.form-content {
+  display: grid;
+  max-width: 800px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 1px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "column textarea"
+    ". textarea";
+  margin-top: 48px;
+  gap: 20px;
+}
+
+.form-control {
+  height: 100%;
+
+  &:nth-child(2) {
+    grid-area: textarea;
+  }
+
+  &:first-child {
+    grid-area: column;
+  }
+}
+
+.custom-file {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 6px;
+}
+
+.custom-file-input {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.custom-file-label-wrapper {
+  border: 2px solid #aaacab;
+  border-radius: 40px;
+  width: 100%;
+  height: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+
+  //span {
+  //  color: #8F8F8F;
+  //  font-size: 14px;
+  //  font-weight: 400;
+  //  line-height: 150%;
+  //  padding-left: 10px;
+  //}
+}
+
+.custom-file-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fafafa;
+  background: transparent;
+  width: 100%;
+
+  svg {
+    margin-right: 15px;
+  }
+}
+
+.file-list {
+  display: flex;
+  align-items: center;
+
+  @media(max-width: 576px) {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+}
+
+.file-item {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: #F5F5F8;
+  color: #393939;
+  font-size: 12px;
+  font-weight: 600;
+  position: relative;
+  z-index: 9;
+
+  &:first-child {
+    margin: 0 10px;
+
+    @media(max-width: 576px) {
+      margin: 0;
+      margin-top: 10px;
+    }
+  }
+}
+
+.file-text-wrapper {
+  margin-right: 16px;
+  margin-left: 8px;
+}
+
+.file-size {
+  font-size: 10px;
+  font-width: 400;
+}
+
+.file-remove {
+  color: red;
+  cursor: pointer;
+}
+
+.form-control--error .custom-file-label-wrapper {
+  border-color: var(--pallette-thunderbird);
+  background-image: url(../assets/images/icons/info-circle-error.svg);
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+}
+
+.form-control__text span {
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+}
+
+.form-block__btn {
+  width: 100%;
+  border-radius: 40px;
+  padding: 20px 40px;
+  background: #283d87;
+
+  span {
+    color: #fff;
+  }
+}
+
+.form-control--error {
+  position: relative;
+
+  .pure-material-textfield-outlined > input,
+  .pure-material-textfield-outlined > textarea,
+  .pure-material-textfield-outlined > input:not(:focus):placeholder-shown,
+  .pure-material-textfield-outlined > textarea:not(:focus):placeholder-shown{
+    border-color: #FF3333;
+    border-top-color: #FF3333;
+  }
+
+
+  .pristine-error.form-control__message {
+    color: #FF3333;
+    position: absolute;
+    bottom: -14px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+.form-control--success {
+  span {
+    background-color: #181818;
+    padding: 0 5px;
+  }
+}
+
+@include media(1650) {
+  .custom-file .custom-file-label {
+    font-size: 14px;
+  }
+}
+
+@include media(1350) {
+  .form-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .form__item:last-child {
+    order: -1;
+  }
+
+  .form-content {
+    max-width: 100%;
+  }
+}
+
+@include media(600) {
+  .form {
+    padding: 30px 0;
+  }
+
+  .form-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-control:first-child {
+    order: 1;
+  }
+
+  .form-control:nth-child(2) {
+    order: 4;
+  }
+
+  .form-control:nth-child(3) {
+    order: 2;
+  }
+
+  .form-control:nth-child(4) {
+    order: 3;
+  }
+
+  .form-control__col-checkbox {
+    order: 5;
+  }
+
+  .custom-file {
+    order: 6;
+  }
+
+  .form-block__btn {
+    order: 7;
+  }
+
+  .custom-file-label {
+    padding: 15px 0;
+  }
+
+  .form__title {
+    font-size: 32px;
+  }
+
+}

@@ -1,0 +1,171 @@
+.slider-block {
+  background-image: url('../images/slider-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  padding: 80px 0;
+
+  @include media(1650) {
+    padding: 80px 0 120px;
+  }
+
+  &-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    //@include media(1650) {
+    //  grid-template-columns: 60% 1fr;
+    //}
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__title {
+    color: #fff;
+  }
+
+  &__text {
+    margin: 80px 0 60px;
+
+    @include media(1650) {
+      font-size: 18px;
+    }
+  }
+
+  &__adv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+
+    &-text {
+      margin-top: 30px;
+      font-weight: 500;
+
+      @include media(1650) {
+        font-size: 17px;
+      }
+    }
+  }
+
+  &__btn {
+    align-self: flex-end;
+  }
+
+  &__slider {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 170px;
+
+    .swiper-slide {
+      height: 523px;
+
+      @include media(1650) {
+        height: 443px;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .swiper-arrow__wrapper {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    align-self: flex-end;
+    margin-top: 40px;
+  }
+
+  .swiper-arrow {
+    cursor: pointer;
+
+    svg path {
+      transition: $standartTrans;
+    }
+
+    &:hover svg path {
+      stroke: #fff
+    }
+  }
+}
+
+@include media(1350) {
+  .slider-block-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slider-block__slider {
+    position: static;
+    width: 112%;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+  }
+
+  .slider-block__item:last-child {
+    display: grid;
+    gap: 30px 0;
+    grid-template-areas:
+    "btn arrows"
+    "slider slider";
+  }
+
+  .slider-block__btn {
+    grid-area: btn;
+  }
+
+  .swiper-arrow__wrapper {
+    grid-area: arrows;
+  }
+
+  .slider-block__slide {
+    grid-area: slider;
+  }
+
+}
+
+@include media(600) {
+  .slider-block {
+    padding: 30px 0;
+  }
+
+  .slider-block__text {
+    margin: 40px 0 30px;
+  }
+
+  .slider-block__adv {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .slider-block__btn {
+    padding: 20px 10px;
+    font-size: 14px;
+  }
+
+  .slider-block__slider {
+    width: 128%;
+  }
+
+  .swiper-slide {
+    height: 300px;
+  }
+}
+
+@include media(400) {
+  .slider-block__slider {
+    width: 133%;
+  }
+}

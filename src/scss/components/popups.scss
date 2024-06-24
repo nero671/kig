@@ -1,0 +1,77 @@
+.popup {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s;
+  background: rgba(20, 22, 24, 0.4);
+
+  &-wrapper {
+    background: #fff;
+    padding: 30px 30px 60px 60px;
+    display: flex;
+    flex-direction: column;
+    max-width: 876px;
+    border-radius: 30px;
+
+    @include media(900) {
+      margin: 30px;
+      padding: 30px;
+    }
+  }
+
+  &-close {
+    align-self: flex-end;
+    cursor: pointer;
+  }
+
+  &-text {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.2;
+    color: #111;
+
+    @include media(900) {
+      font-size: 30px;
+    }
+  }
+
+  .form-popup__content-title {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #111;
+  }
+
+  .form-control__text span {
+    font-weight: 500;
+    font-size: 14px;
+    color: #252525;
+
+    a {
+      color: #252525;
+    }
+  }
+
+  .custom-file-label {
+    font-weight: 500;
+    font-size: 16px;
+    color: #252525;
+  }
+
+  .pure-material-textfield-outlined > input:focus + span,
+  .pure-material-textfield-outlined > textarea:focus + span {
+    color: #aaacab;
+    background: #fff;
+    padding: 0 5px;
+    text-align: center;
+  }
+}
+
+
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Новости'
+})
+<body>
+<div class="wrapper">
+    @@include('html/header/header.html', {
+    "class": "active",
+    })
+    <main class="page addition-page new-page">
+        <div data-observ></div>
+
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__container">
+                <ul>
+                    <li>
+                        <a href="/">
+                            Главная
+                        </a>
+                    </li>
+
+                    <li>
+                        Новости
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="news-title__container">
+            <h1 class="title news-title">
+                Новости
+            </h1>
+        </div>
+
+
+        <section class="news">
+            <div class="news-wrapper__container">
+                <div class="news-wrapper">
+                    @@include('html/components/new/new.html', {
+                        "src": "images/news/n1.png",
+                        "title": "«К-Индастриал Групп» стал официальным дистрибьютором компании Vergokan",
+                        "date": "08.07.2023",
+                    })
+
+                    @@include('html/components/new/new.html', {
+                        "src": "images/news/n2.png",
+                        "title": "«К-Индастриал Групп» стал официальным дистрибьютором компании Vergokan",
+                        "date": "08.07.2023",
+                    })
+
+                    @@include('html/components/new/new.html', {
+                        "src": "images/news/n3.png",
+                        "title": "«К-Индастриал Групп» стал официальным дистрибьютором компании Vergokan",
+                        "date": "08.07.2023",
+                    })
+
+                    @@include('html/components/new/new.html', {
+                        "src": "images/news/n4.png",
+                        "title": "«К-Индастриал Групп» стал официальным дистрибьютором компании Vergokan",
+                        "date": "08.07.2023",
+                    })
+
+                    @@include('html/components/new/new.html', {
+                        "src": "images/news/n5.png",
+                        "title": "«К-Индастриал Групп» стал официальным дистрибьютором компании Vergokan",
+                        "date": "08.07.2023",
+                    })
+
+                    @@include('html/components/new/new.html', {
+                        "src": "images/news/n6.png",
+                        "title": "«К-Индастриал Групп» стал официальным дистрибьютором компании Vergokan",
+                        "date": "08.07.2023",
+                    })
+                </div>
+            </div>
+        </section>
+
+        @@include('html/components/pagination/pagination.html', {
+        "last": "17"
+        })
+
+
+
+    </main>
+    @@include('html/footer/footer.html', {})
+    @@include('html/components/burger-menu/burger-menu.html', {})
+    @@include('html/components/popups/thanks-popup.html', {})
+    @@include('html/components/popups/form-popup.html', {})
+
+</div>
+@@include('html/script.html', {})
+</body>
+</html>

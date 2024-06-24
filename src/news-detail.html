@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Детальная новость'
+})
+<body>
+<div class="wrapper">
+    @@include('html/header/header.html', {
+    "class": "active",
+    })
+    <main class="page addition-page new-detail-page">
+        <div data-observ></div>
+
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__container">
+                <ul>
+                    <li>
+                        <a href="/">
+                            Главная
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/news.html">
+                            Новости
+                        </a>
+                    </li>
+
+                    <li>
+                        «К-Индастриал Групп» стал официальным дистрибьютором компании Vergokan
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="news-intro">
+            <div class="news-intro__container">
+                <h1 class="title news-intro__title">
+                    «К-Индастриал Групп» стал официальным дистрибьютором компании Vergokan
+                </h1>
+
+                <div class="news-intro__wrapper">
+                    <div class="news-intro__item">
+                        <div class="news-intro__date">
+                            08.07.2023
+                        </div>
+                        <p class="text news-intro__text">
+                            Рады сообщить, что наша компания стала официальным дистрибьютором продукции марки Vergokan. Широкий ассортимент металлических кабеленсущих систем: листовых лотков, проволочных лотков, лестничных лотков, напольных систем, монтажных систем и напольных промышленных коробов всегда в оперативные сроки и по выгодным ценам! 
+                            <br><br>
+                            Достаточно направить нам запрос и мы оперативно сделаем вам лучшее предложение.
+                        </p>
+                    </div>
+                    <div class="news-intro__item">
+                        <img src="images/news/n7.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <section class="news">
+            <div class="news-wrapper__container">
+                <h1 class="title news__title">
+                    Читать другие новости
+                </h1>
+                <div class="news-wrapper">
+                    @@include('html/components/new/new.html', {
+                    "src": "images/news/n1.png",
+                    "title": "«К-Индастриал Групп» стал официальным дистрибьютором компании Vergokan",
+                    "date": "08.07.2023",
+                    })
+
+                    @@include('html/components/new/new.html', {
+                    "src": "images/news/n2.png",
+                    "title": "«К-Индастриал Групп» стал официальным дистрибьютором компании Vergokan",
+                    "date": "08.07.2023",
+                    })
+
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    @@include('html/footer/footer.html', {})
+    @@include('html/components/burger-menu/burger-menu.html', {})
+    @@include('html/components/popups/thanks-popup.html', {})
+    @@include('html/components/popups/form-popup.html', {})
+
+</div>
+@@include('html/script.html', {})
+</body>
+</html>

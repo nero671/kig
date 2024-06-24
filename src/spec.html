@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Направления деятельности'
+})
+<body>
+<div class="wrapper">
+    @@include('html/header/header.html', {
+    "class": "active",
+    })
+    <main class="page addition-page spec-page">
+        <div data-observ></div>
+
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__container">
+                <ul>
+                    <li>
+                        <a href="/">
+                            Главная
+                        </a>
+                    </li>
+
+                    <li>
+                        Направления деятельности
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        @@include('html/components/intro-block/intro-block.html', {
+        "title": "Направления деятельности",
+        "text": "Компания «К-Индастриал Групп» специализируется на поставках электротехнического оборудования и кабельной продукции российских и зарубежных производителей. Основные направления деятельности  включают комплексное обеспечение строительных и промышленных объектов необходимым оборудованием и материалами.",
+        "src": "images/spec.jpg"
+        })
+
+
+
+        <section class="stage spec-page__state">
+            <div class="stage__container">
+                <h2 class="title stage__title">
+                    Мы оказываем полный спектр услуг,
+                    техническую и информационную поддержку
+                </h2>
+
+                <div class="text stage__text">
+                    Это позволяет нашим заказчикам оптимизировать процессы
+                    внедрения и обслуживания электротехнического оборудования.
+                    Наша компания осуществляет работу по трем основным направлениям:
+                </div>
+
+                <div class="stage-wrapper">
+                    <div class="stage__item">
+                        <div class="stage-number">01</div>
+                        <div class="stage-title">
+                            Поставки запчастей и комплектующих
+                            для промышленных электросистем
+                            и производственных установок
+                            промышленных предприятий
+                        </div>
+                        <div class="stage-content">
+                            <img src="images/spec1.png" alt="Kig">
+                        </div>
+                    </div>
+
+                    <div class="stage__item">
+                        <div class="stage-number">02</div>
+                        <div class="stage-title">
+                            Проектные и комплексные поставки электротехнического оборудования
+                            и кабельной продукции
+                        </div>
+                        <div class="stage-content">
+                            <img src="images/spec2.png" alt="Kig">
+                        </div>
+                    </div>
+
+                    <div class="stage__item">
+                        <div class="stage-number">03</div>
+                        <div class="stage-title">
+                            Услуги по монтажу, пусконаладке
+                            и технологическому обслуживанию промышленного оборудования
+                        </div>
+                        <div class="stage-content">
+                            <img src="images/spec3.png" alt="Kig">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        @@include('html/advantages/advantages.html', {
+        "title": "Почему нас выбирают",
+        "text1": "Мы гарантируем заказчику качество и надежность всех поставляемых изделий",
+        "text2": "Сопровождение персонального менеджера на всех этапах сотрудничества",
+        "text3": "Поставка продукции осуществляется в соответствие с договором, точно в срок.",
+        "text4": "Мы предлагаем удобные для наших клиентов схемы работы.",
+        "src1": "images/adv7.svg",
+        "src2": "images/adv8.svg",
+        "src3": "images/adv9.svg",
+        "src4": "images/adv10.svg",
+        })
+
+
+
+
+        @@include('html/form/form.html', {
+        "title": "Оставить заявку на подбор продукции",
+        "src": "images/slide2.png",
+        "file": "Прикрепить заявку на расчет"
+        })
+
+    </main>
+    @@include('html/footer/footer.html', {})
+    @@include('html/components/burger-menu/burger-menu.html', {})
+    @@include('html/components/popups/thanks-popup.html', {})
+    @@include('html/components/popups/form-popup.html', {})
+
+</div>
+@@include('html/script.html', {})
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Главная'
+})
+<body>
+<div class="wrapper">
+    @@include('html/header/header.html', {})
+    <main class="page">
+        <div data-observ></div>
+        @@include('html/intro-section/intro-section.html', {})
+        @@include('html/marquees/marquees.html', {})
+        @@include('html/slider-block/slider-block.html', {})
+        @@include('html/advantages/advantages.html', {
+            "title": "Наши преимущества",
+            "text1": "Оперативная обработка запросов - подбор оборудования по спецификациям заказчика",
+            "text2": "Конкурентные цены - в том числе на параллельный импорт. Гибкие условия оплаты - возможна постоплата",
+            "text3": "Подбор уникального/редкого оборудования - в том числе аналогов, снятого с производства или не поставляемого в РФ ",
+            "text4": "Оригинальные товары мировых брендов. Необходимая гарантийная поддержка ",
+            "src1": "images/adv3.svg",
+            "src2": "images/adv4.svg",
+            "src3": "images/adv5.svg",
+            "src4": "images/adv6.svg",
+        })
+
+        @@include('html/form/form.html', {
+        "title": "Оставить заявку на подбор продукции",
+        "src": "images/slide2.png",
+        "file": "Прикрепить заявку на расчет"
+        })
+
+    </main>
+    @@include('html/footer/footer.html', {})
+    @@include('html/components/burger-menu/burger-menu.html', {})
+    @@include('html/components/popups/thanks-popup.html', {})
+    @@include('html/components/popups/form-popup.html', {})
+</div>
+@@include('html/script.html', {})
+</body>
+</html>

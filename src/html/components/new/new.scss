@@ -1,0 +1,46 @@
+.new {
+  padding: 30px;
+  border: 1px solid #aaacab;
+
+  &-content {
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.2;
+    color: #111;
+    margin-bottom: 20px;
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #111;
+    opacity: 0.6;
+  }
+}
+
+@include media(700) {
+  .new {
+    padding: 15px;
+  }
+
+  .new__title {
+    font-size: 18px;
+  }
+
+  .new__date {
+    font-size: 14px;
+  }
+}

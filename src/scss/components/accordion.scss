@@ -1,0 +1,129 @@
+.accordion {
+  padding: 150px 0 120px;
+
+  &-wrapper {
+    margin-top: 60px;
+    max-width: 1350px;
+    width: 100%;
+  }
+
+  &__item {
+    border-top: 2px solid #aaacab;
+
+    &:last-child {
+      border-bottom: 2px solid #aaacab;
+    }
+  }
+
+  &__title {
+    padding: 30px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &.active {
+      &:after {
+        transform: rotate(180deg);
+        transition: 0.35s;
+      }
+    }
+
+    &:after {
+      content: '';
+      height: 39px;
+      width: 38px;
+      background-image: url('data:image/svg+xml,<svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.3932 36.7495L19.3932 36.7517M19.3932 36.7495L37.7862 18.3748M19.3932 36.7495L1.00015 18.3748" stroke="%23283D87" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>') ;
+      display: inline-flex;
+      background-repeat: no-repeat;
+      margin-left: 4px;
+      transition: 0.35s;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      li {
+        &:first-child {
+          font-weight: 500;
+          font-size: 30px;
+          color: #111;
+        }
+
+        &:nth-child(2) {
+          font-weight: 500;
+          font-size: 20px;
+          color: rgba(17, 17, 17, 0.6);
+        }
+
+        &:last-child {
+          font-weight: 500;
+          font-size: 24px;
+          color: #111;
+        }
+      }
+    }
+  }
+
+  &__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    ul {
+      list-style: disc;
+
+      li {
+        list-style: disc;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        color: rgba(17, 17, 17, 0.6);
+        margin-left: 25px;
+      }
+    }
+  }
+
+  &__content-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__content-title {
+    font-weight: 500;
+    font-size: 24px;
+    color: #111;
+  }
+
+  &__btn {
+    background: #283d87;
+    color: #fff;
+  }
+
+  &__content {
+    height: 0;
+    overflow: hidden;
+    transition: 0.35s;
+
+    &.active {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@include media(700) {
+  .accordion {
+    padding: 60px 0;
+  }
+
+  .accordion-wrapper {
+    margin-top: 30px;
+  }
+
+  .accordion__title ul {
+    max-width: 70%;
+  }
+}

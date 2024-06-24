@@ -1,0 +1,14 @@
+.title {
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 1.2;
+  color: #111;
+
+  @include media(1650) {
+    font-size: 60px;
+  }
+
+  @include media(600) {
+    font-size: 28px;
+  }
+}

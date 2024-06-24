@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Поиск'
+})
+<body>
+<div class="wrapper">
+    @@include('html/header/header.html', {
+        "class": "active",
+    })
+    <main class="page addition-page search-page">
+        <div data-observ></div>
+
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__container">
+                <ul>
+                    <li>
+                        <a href="/">
+                            Главная
+                        </a>
+                    </li>
+
+                    <li>
+                        Результат поиска
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="result-search">
+            <div class="result-search__container">
+                <div class="result-search__title-wrapper">
+                    <div class="title result-search__title">
+                        Результат поиска
+                    </div>
+                    <div class="text result-search__text">
+                        Найдено: 50 результатов
+                    </div>
+                </div>
+
+                <div class="header-search active">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.7598 23.6801C19.2385 23.6801 23.6798 19.2388 23.6798 13.7601C23.6798 8.28142 19.2385 3.84009 13.7598 3.84009C8.28118 3.84009 3.83984 8.28142 3.83984 13.7601C3.83984 19.2388 8.28118 23.6801 13.7598 23.6801Z" stroke="#283d87" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M26.1577 26.1606L20.7637 20.7666" stroke="#283d87" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <input type="text" class="search" placeholder="Найти">
+                    <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="enter-search">
+                        <path d="M19 1.75352L26 8.07456" stroke="#283d87" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M19 14.7535L26 8.43249" stroke="#283d87" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M1 8.25352H26" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path>
+                    </svg>
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="close-search">
+                        <path d="M2.39429 1.59875L20.3943 19.9198" stroke="#283d87" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M1.60571 20.1058L19.6057 1.78474" stroke="#283d87" stroke-width="2" stroke-linecap="round"></path>
+                    </svg>
+
+                    <div class="header-search__results">
+                        <div class="header-search__results_false">
+                            К сожалению, по вашему поисковому запросу ничего не найдено.
+                        </div>
+                        <ul class="header-search__results_true">
+                            <li><a href="#">test1</a></li><li>
+                        </li><li><a href="#">test2</a></li><li>
+                        </li><li><a href="#">test3</a></li><li>
+                        </li></ul>
+                    </div>
+                </div>
+
+                <div class="result-search__content">
+                    <div class="result-search__content-item">
+                        <div class="result-search__content-title">
+                            О компании
+                        </div>
+
+                        <div class="result-search__content-text">
+                            Поставки оборудования являются важным аспектом многих промышленных и строительных проектов. Компания тщательно отслеживает поставки оборудования, чтобы обеспечить бесперебойный ход работ и избежать простоев.
+                        </div>
+
+                        <a href="#" class="btn btn-blue result-search__content-btn">
+                            Перейти
+                        </a>
+                    </div>
+
+                    <div class="result-search__content-item">
+                        <div class="result-search__content-title">
+                            Производители
+                        </div>
+
+                        <div class="result-search__content-text">
+                            Качественные инструменты играют ключевую роль в выполнении различных задач. Поставки инструментов должны быть организованы таким образом, чтобы рабочие всегда имели под рукой необходимые им приспособления.
+                        </div>
+
+                        <a href="#" class="btn btn-blue result-search__content-btn">
+                            Перейти
+                        </a>
+                    </div>
+
+                    <div class="result-search__content-item">
+                        <div class="result-search__content-title">
+                            Новости
+                        </div>
+
+                        <div class="result-search__content-text">
+                            Наша компания уделяет особое внимание планированию
+                            и организации поставок материалов, чтобы гарантировать,
+                            что на объекте всегда будут доступны все необходимые компоненты. Слаженная система поставок материалов помогает поддерживать высокое качество.
+                        </div>
+
+                        <a href="#" class="btn btn-blue result-search__content-btn">
+                            Перейти
+                        </a>
+                    </div>
+                </div>
+
+                @@include('html/components/pagination/pagination.html', {
+                    "last": "04"
+                })
+            </div>
+        </section>
+
+
+    </main>
+    @@include('html/footer/footer.html', {})
+
+</div>
+@@include('html/script.html', {})
+</body>
+</html>
