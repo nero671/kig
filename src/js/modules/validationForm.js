@@ -63,7 +63,7 @@ const formValidation = () => {
         if (!(value.length < 16)) return true;
 
         return false;
-    }, 'Введите полный телефон в соответствии с "маской"');
+    }, '');
 
     Pristine.addValidator('only-number-optional', (value) => {
         const regEx = /^\d+$/;

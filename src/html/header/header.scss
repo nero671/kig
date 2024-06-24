@@ -56,7 +56,7 @@
 
       li, li > a {
         font-weight: 400;
-        font-size: 20px;
+        font-size: 14px;
         color: #fff;
       }
     }
@@ -64,8 +64,8 @@
 
   &-search {
     margin-left: auto;
-    width: 62px;
-    height: 62px;
+    width: 50px;
+    height: 50px;
     border: 2px solid #fff;
     border-radius: 50%;
     display: flex;
@@ -97,7 +97,7 @@
 
       a {
         font-weight: 400;
-        font-size: 20px;
+        font-size: 16px;
         color: #283d87;
         display: flex;
         margin-bottom: 15px;
@@ -105,7 +105,7 @@
 
       &_false {
         font-weight: 400;
-        font-size: 20px;
+        font-size: 16px;
         color: #111;
       }
 
@@ -142,12 +142,12 @@
         background: transparent;
         border: none;
         font-weight: 700;
-        font-size: 18px;
+        font-size: 14px;
         color: #fff;
 
         &::placeholder {
           font-weight: 700;
-          font-size: 18px;
+          font-size: 14px;
           color: #fff;
         }
       }
@@ -289,7 +289,7 @@
 
   .header__menu .menu__list li,
   .header__menu .menu__list li > a {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 

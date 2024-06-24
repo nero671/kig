@@ -11,13 +11,13 @@
   opacity: 0;
   transition: all 0.3s;
   background: #fff;
-  padding: 40px 15px 15px;
+  padding: 40px 60px 15px;
   gap: 40px;
 
   &._is-open {
     opacity: 1;
     z-index: 99999;
-    top: calc($headerHeight) + 5px;
+    top: calc($headerHeight) + px;
   }
 
   &.active {
@@ -47,6 +47,7 @@
     font-weight: 400;
     font-size: 18px;
     color: #283d87;
+    padding: 0;
 
     &:after {
       content: "";

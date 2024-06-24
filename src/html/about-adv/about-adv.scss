@@ -6,6 +6,7 @@
     align-items: flex-start;
     justify-content: space-between;
     margin-top: 60px;
+    gap: 30px;
   }
 
   &__item {
@@ -17,7 +18,7 @@
 
     &-title {
       font-weight: 400;
-      font-size: 110px;
+      font-size: 74px;
       line-height: 1;
       color: #283d87;
 
@@ -29,17 +30,11 @@
 
     &-text {
       font-weight: 500;
-      font-size: 24px;
+      font-size: 18px;
       text-align: center;
       color: #111;
       max-width: 428px;
     }
-  }
-}
-
-@include media(1750) {
-  .about-adv__item-title {
-    font-size: 73px;
   }
 }
 

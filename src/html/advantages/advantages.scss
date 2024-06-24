@@ -32,6 +32,12 @@
   }
 }
 
+@include media(1650) {
+  .advantages__text br {
+    display: none;
+  }
+}
+
 @include media(991) {
   .advantages-wrapper {
     display: grid;

@@ -9,7 +9,7 @@
     max-width: 800px;
     margin-top: 40px;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
     color: #111;
   }
 
@@ -41,7 +41,7 @@
     max-width: 465px;
     width: 100%;
     font-weight: 500;
-    font-size: 36px;
+    font-size: 28px;
     color: #111;
   }
 
@@ -84,14 +84,9 @@
   padding: 120px 0 60px;
   .stage-title {
     font-weight: 500;
-    font-size: 30px;
+    font-size: 24px;
     color: #111;
-    max-width: 520px;
-
-    @include media(1750) {
-      font-size: 26px;
-      max-width: 500px;
-    }
+    max-width: 500px;
   }
 
   .stage-content {
