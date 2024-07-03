@@ -10,19 +10,16 @@ import { body, lockPaddingElements, pageWrapper } from './elementsNodeList';
 const toggleBodyLock = (isLock) => {
   const lockPaddingValue = window.innerWidth - pageWrapper.offsetWidth;
 
-  setTimeout(
-    () => {
-      if (lockPaddingElements) {
-        lockPaddingElements.forEach((element) => {
-          element.style.paddingRight = isLock ? `${lockPaddingValue}px` : '0px';
-        });
-      }
+    console.log(lockPaddingValue)
 
-      body.style.paddingRight = isLock ? `${lockPaddingValue}px` : '0px';
-      body.classList.toggle('lock', isLock);
-    },
-    isLock ? 0 : 500
-  );
+    // if (lockPaddingElements) {
+    //     lockPaddingElements.forEach((element) => {
+    //         element.style.paddingRight = isLock ? `9px` : '0px';
+    //     });
+    // }
+    //
+    // body.style.paddingRight = isLock ? `8px` : '0px';
+    body.classList.toggle('lock', isLock);
 };
 
 export default toggleBodyLock;

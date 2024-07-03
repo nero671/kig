@@ -44,6 +44,13 @@
 @import 'components/stages';
 @import 'components/thnk-block';
 @import 'components/accordion';
+@import 'components/contacs';
+@import 'components/manufacturers';
+@import 'components/catalog';
+@import 'components/product';
+@import 'components/delivery';
+@import 'components/text-page';
+@import 'components/404';
 
 /** Подключение стилей отдельных блоков и секций */
 @import '../html/**/*.scss';

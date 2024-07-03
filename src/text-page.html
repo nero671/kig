@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'О компании'
+})
+<body>
+<div class="wrapper">
+    @@include('html/header/header.html', {
+    "class": "active",
+    })
+    <main class="page addition-page text-page">
+        <div data-observ></div>
+
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__container">
+                <ul>
+                    <li>
+                        <a href="/">
+                            Главная
+                        </a>
+                    </li>
+
+                    <li>
+                        О компании
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-page-wrapper">
+            <div class="text-page__container">
+                <div class="text-page__content">
+                    <h1>Test title</h1>
+
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius id laudantium sapiente. Ad, assumenda atque deserunt ducimus eos et explicabo facere illo libero minima natus provident quaerat rerum sint tempora tempore tenetur veniam vitae.
+                    </p>
+
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius id laudantium sapiente. Ad, assumenda atque deserunt ducimus eos et explicabo facere illo libero minima natus provident quaerat rerum sint tempora tempore tenetur veniam vitae.
+                    </p>
+
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius id laudantium sapiente. Ad, assumenda atque deserunt ducimus eos et explicabo facere illo libero minima natus provident quaerat rerum sint tempora tempore tenetur veniam vitae.
+                    </p>
+
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius id laudantium sapiente. Ad, assumenda atque deserunt ducimus eos et explicabo facere illo libero minima natus provident quaerat rerum sint tempora tempore tenetur veniam vitae.
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+    </main>
+    @@include('html/footer/footer.html', {})
+    @@include('html/components/burger-menu/burger-menu.html', {})
+    @@include('html/components/popups/thanks-popup.html', {})
+    @@include('html/components/popups/form-popup.html', {})
+    @@include('html/components/popups/ring-popup.html', {})
+
+</div>
+@@include('html/script.html', {})
+</body>
+</html>

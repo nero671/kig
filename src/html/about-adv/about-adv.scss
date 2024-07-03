@@ -1,5 +1,5 @@
 .about-adv {
-  padding: 105px 0;
+  padding: 105px 0 0;
 
   &__wrapper {
     display: flex;
@@ -14,11 +14,10 @@
     flex-direction: column;
     gap: 30px;
     align-items: center;
-    padding: 0 20px;
 
     &-title {
       font-weight: 400;
-      font-size: 74px;
+      font-size: 64px;
       line-height: 1;
       color: #283d87;
 
@@ -33,7 +32,6 @@
       font-size: 18px;
       text-align: center;
       color: #111;
-      max-width: 428px;
     }
   }
 }

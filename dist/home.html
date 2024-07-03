@@ -7,21 +7,22 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap&_v=20240624125829" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css?_v=20240624125829">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap&_v=20240703130405" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css?_v=20240703130405">
 
 <!--  <script-->
 <!--          src="https://code.jquery.com/jquery-3.6.1.min.js"-->
 <!--          integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="-->
 <!--          crossorigin="anonymous"></script>-->
-<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js?_v=20240624125829"></script>-->
-<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js?_v=20240624125829"></script>-->
+<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js?_v=20240703130405"></script>-->
+<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js?_v=20240703130405"></script>-->
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU&_v=20240703130405"></script>
   <title>Главная</title>
 </head>
 
 <body>
 <div class="wrapper">
-    <header class="header sticky @@class">
+    <header class="header sticky @@class" data-lp>
   <div class="header__container">
     <a href="#" class="header__logo logo">
       <svg width="154" height="50" viewBox="0 0 193 62" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -106,7 +107,7 @@
       </div>
     </div>
 
-    <a href="#" class="btn btn-white header__btn">
+    <a href="#" class="btn btn-white header__btn" data-type="ring">
       Заказать звонок
     </a>
     <button class="header__burger icon-menu">
@@ -409,20 +410,7 @@
                             </svg>
                         </a>
                         <a href="#" class="logo-marquees__link logo-marquees-svg-rect">
-                            <svg width="120" height="55" viewBox="0 0 120 55" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0_6076_5523" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="55">
-                                    <rect x="0.800781" width="119.167" height="55" fill="url(#pattern0_6076_5523)"/>
-                                </mask>
-                                <g mask="url(#mask0_6076_5523)">
-                                    <rect x="0.800781" width="119.167" height="55" fill="#AAACAB"/>
-                                </g>
-                                <defs>
-                                    <pattern id="pattern0_6076_5523" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                        <use xlink:href="#image0_6076_5523" transform="matrix(0.00334448 0 0 0.00724638 -0.00167225 0)"/>
-                                    </pattern>
-                                    <image id="image0_6076_5523" width="300" height="138" xlink:href="data:image/png;base64,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"/>
-                                </defs>
-                            </svg>
+                            <img src="images/m55.svg" alt="Kig">
                         </a>
 
                     </p>
@@ -690,14 +678,14 @@
                 </h2>
 
                 <p class="text slider-block__text">
-                    Комплексные решения для строительства и производства, многолетний опыт работы на отраслевом рынке, десятки партнеров-производителей с мировым именем, выгодные цены и комфортные схемы сотрудничества.
+                    Комплексные решения для строительства и производства, многолетний опыт <br> работы на отраслевом рынке, десятки партнеров-производителей с мировым <br> именем, выгодные цены и комфортные схемы сотрудничества.
                 </p>
 
                 <div class="slider-block__adv">
                     <div class="slider-block__adv-item">
                         <img src="images/adv2.svg" alt="" />
                         <p class="text slider-block__adv-text">
-                            Качественная продукция, соответствующая международным <br> и российским стандартам
+                            Качественная продукция, <br> соответствующая международным <br> и российским стандартам
                         </p>
                     </div>
 
@@ -705,7 +693,7 @@
                         <img src="images/adv1.svg" alt="" />
 
                         <p class="text slider-block__adv-text">
-                            Широкий спектр брендов оборудования со складов РФ <br>
+                            Широкий спектр брендов <br> оборудования со складов РФ <br>
                             и из-за рубежа
                         </p>
 
@@ -741,6 +729,10 @@
                         <div class="swiper-slide">
                             <picture><source srcset="images/slide02.webp" type="image/webp"><img src="images/slide02.jpg" alt="" /></picture>
                         </div>
+
+                        <div class="swiper-slide">
+                            <picture><source srcset="images/slide3.webp" type="image/webp"><img src="images/slide3.jpg" alt="" /></picture>
+                        </div>
                     </div>
                 </div>
 
@@ -764,7 +756,7 @@
             <div class="advantages__item">
                 <img src="images/adv3.svg" alt="">
                 <div class="text advantages__text">
-                    Оперативная обработка запросов - <br> подбор оборудования по спецификациям заказчика
+                    Оперативная обработка запросов - <br> подбор оборудования по <br> спецификациям заказчика
                 </div>
             </div>
 
@@ -793,7 +785,7 @@
 </section>
 
 
-        <section class="form">
+        <section class="form" id="form">
     <div class="form__container">
         <div class="form-wrapper">
             <div class="form__item">
@@ -844,6 +836,7 @@
                                        name="tel"
                                        placeholder=" "
                                        data-pristine-required-message="Обязательно к заполнению"
+                                       data-pristine-custom-email
                                        required=""
                                 >
                                 <span>Email*</span>
@@ -968,7 +961,9 @@
                   </div>
               </div>
               <div class="footer-left__item">
-                  <img src="images/development.svg" alt=""/>
+                  <a href="#" target="_blank">
+                    <img src="images/development.svg" alt="kig"/>
+                  </a>
               </div>
           </div>
 
@@ -1015,7 +1010,7 @@
                   Придорожная улица, 4Б</p>
               </div>
 
-              <a href="#" class="btn btn-blue footer__btn">
+              <a href="#" class="btn btn-blue footer__btn" data-type="ring">
                   Заказать звонок
               </a>
 
@@ -1081,14 +1076,14 @@
         </div>
     </div>
 
-    <a href="#" class="btn btn-blue mobile-menu__btn">
+    <a href="#" class="btn btn-blue mobile-menu__btn" data-type="ring">
         Заказать звонок
     </a>
 </section>
 
     <div class="popup thanks-popup" data-popup="thank">
     <div class="popup-wrapper">
-        <div class="popup-close">
+        <div class="popup-close button-close">
             <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2.63477 1.34961L31.6348 31.0481" stroke="#283D87" stroke-width="2" stroke-linecap="round" />
                 <path d="M1.36523 31.3496L30.3652 1.65113" stroke="#283D87" stroke-width="2" stroke-linecap="round" />
@@ -1103,7 +1098,7 @@
 
     <div class="popup form-popup" data-popup="note">
     <div class="popup-wrapper">
-        <div class="popup-close">
+        <div class="popup-close button-close">
             <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2.63477 1.34961L31.6348 31.0481" stroke="#283D87" stroke-width="2" stroke-linecap="round" />
                 <path d="M1.36523 31.3496L30.3652 1.65113" stroke="#283D87" stroke-width="2" stroke-linecap="round" />
@@ -1158,6 +1153,7 @@
                                placeholder=" "
                                data-pristine-required-message="Обязательно к заполнению"
                                required=""
+                               data-pristine-custom-email
                         >
                         <span>Email*</span>
                     </label>
@@ -1236,7 +1232,76 @@
     </div>
 </div>
 
+    <div class="popup ring-popup" data-popup="ring">
+    <div class="popup-wrapper">
+        <div class="popup-close button-close">
+            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.63477 1.34961L31.6348 31.0481" stroke="#283D87" stroke-width="2" stroke-linecap="round" />
+                <path d="M1.36523 31.3496L30.3652 1.65113" stroke="#283D87" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </div>
+
+        <div class="form-popup__content">
+            <div class="form-popup__content-title">
+                Заказать <br> обратный звонок
+            </div>
+
+            <div class="popup-text">
+                Оставьте нам свой номер телефона и мы Вам позвоним!
+            </div>
+
+            <form action="/" method="get" class="form-content validation-form" novalidate="true">
+
+
+                <div class="form-control form-control--col">
+                    <label class="pure-material-textfield-outlined">
+                        <input id="name_default"
+                               class="form-control__input "
+                               type="text"
+                               name="name"
+                               placeholder=" "
+                               data-pristine-required-message="Обязательно к заполнению"
+                               required=""
+                        >
+                        <span>Имя*</span>
+                    </label>
+                </div>
+
+                <div class="form-control form-control--col">
+                    <label class="pure-material-textfield-outlined">
+                        <input id="tel_default2"
+                               class="form-control__input phone-mask"
+                               type="tel"
+                               name="tel"
+                               placeholder=""
+                               data-pristine-required-message="Обязательно к заполнению"
+                               required=""
+                               data-pristine-phone
+                        >
+                        <span>Телефон*</span>
+                    </label>
+                </div>
+
+                <button class="btn btn--btn btn--primary form-block__btn form-control">
+                          <span class="btn__text ">
+                            Отправить
+                          </span>
+                </button>
+
+
+
+
+
+
+
+            </form>
+        </div>
+
+
+    </div>
 </div>
-<script src="js/app.min.js?_v=20240624125829"></script>
+
+</div>
+<script src="js/app.min.js?_v=20240703130405"></script>
 </body>
 </html>

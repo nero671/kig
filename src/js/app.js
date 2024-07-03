@@ -80,7 +80,7 @@ new BurgerMenu().init();
  * На обертку(враппер) окна добавь класс _overlay-bg
  * На кнопку для закрытия окна добавь класс button-close
  */
-// togglePopupWindows();
+togglePopupWindows();
 
 // const tabs = new Tabs('default-tabs', {});
 

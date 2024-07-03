@@ -29,14 +29,14 @@
 
   &__title {
     font-weight: 600;
-    font-size: 64px;
+    font-size: 83px;
     line-height: 1.2;
     color: #fff;
-    max-width: 850px;
+    max-width: 975px;
 
     @include media(1650) {
-      font-size: 48px;
-      max-width: 635px;
+      font-size: 64px;
+      max-width: 835px;
     }
   }
 }

@@ -1,3 +1,8 @@
+html {
+  scrollbar-gutter: stable;
+  -webkit-scrollbar-gutter: stable;
+}
+
 body {
   &.lock {
     overflow: hidden;

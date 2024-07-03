@@ -15,7 +15,12 @@
     font-weight: 400;
     font-size: 18px;
     color: #111;
-    max-width: 578px;
+
+    @include media(700) {
+      br {
+        display: none;
+      }
+    }
   }
 
   img {

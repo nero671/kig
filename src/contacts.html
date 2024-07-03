@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Контакты'
+})
+<body>
+<div class="wrapper">
+    @@include('html/header/header.html', {
+    "class": "active",
+    })
+    <main class="page addition-page contacts-page">
+        <div data-observ></div>
+
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__container">
+                <ul>
+                    <li>
+                        <a href="/">
+                            Главная
+                        </a>
+                    </li>
+
+                    <li>
+                        Контакты
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="contacts">
+            <div class="contacts__container">
+                <div class="contacts-wrapper">
+                    <div class="contacts-item">
+                        <h1 class="title contacts__title">
+                            Контакты
+                        </h1>
+
+                        <div class="contacts__text">
+                            Головной офис компании:
+                        </div>
+
+                        <div class="contacts__info">
+                            г. Москва, 6-я улица Новые Сады, 2 <br>
+                            <a href="tel:+7 (495) 785 80 46">+7 (495) 785 80 46</a>  <br>
+                            <a href="mailto:mail@k-igroup.ru">mail@k-igroup.ru</a>
+                        </div>
+                    </div>
+
+                    <div class="contacts-item">
+                        <div class="map sales-rep-grid__map" id="map_with_balloon" data-coordinates="53.9023, 27.5619"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="stage">
+            <div class="stage__container">
+
+                <div class="stage-wrapper">
+                    <div class="stage__item">
+                        <div class="stage-text">Склад компании</div>
+                        <div class="stage-title">
+                            г. Москва, д. Шарапово, <br>
+                            поселение Марушкинское, Придорожная улица, 4Б <br>
+                            +7 (925) 508 54 47
+                        </div>
+                        <div class="stage-content">
+                            <div class="btn stage-btn">Посмотреть схему проезда</div>
+                        </div>
+                    </div>
+
+                    <div class="stage__item">
+                        <div class="stage-text">Офис компании в Екатеринбурге</div>
+                        <div class="stage-title">
+                            г. Екатеринбург, ул. Бархотская, 1И <br>
+                            +7 (343) 286 23 02
+                        </div>
+                        <div class="stage-content">
+                            <div class="btn stage-btn">Посмотреть схему проезда</div>
+                        </div>
+                    </div>
+
+                    <div class="stage__item">
+                        <div class="stage-text">Офис компании в Самаре</div>
+                        <div class="stage-title">
+                            г. Самара, Московское шоссе, д. 43 <br>
+                            +7 (846) 200 77 71
+                        </div>
+                        <div class="stage-content">
+                            <div class="btn stage-btn">Посмотреть схему проезда</div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+    @@include('html/footer/footer.html', {})
+    @@include('html/components/burger-menu/burger-menu.html', {})
+    @@include('html/components/popups/thanks-popup.html', {})
+    @@include('html/components/popups/form-popup.html', {})
+    @@include('html/components/popups/ring-popup.html', {})
+
+</div>
+@@include('html/script.html', {})
+<script>
+    const mapNode = document.getElementById('map_with_balloon');
+
+
+    mapNode?.addEventListener('store-choice', (e) => {
+        console.log('do ajax', e.detail.id);
+    });
+
+    const Map = () => {
+        if (typeof ymaps === 'undefined') return;
+
+        ymaps.ready(() => {
+            const mapNode = document.getElementById('map_with_balloon');
+
+            if (!mapNode) return;
+
+            const coords = mapNode?.dataset.coordinates.split(',');
+
+            const map = new ymaps.Map(mapNode, {
+                center: coords,
+                zoom: 12,
+            });
+
+
+            const pointCollection = new ymaps.GeoObjectCollection();
+
+            const convertedPlacemarkActive = "data:image/svg+xml,%3csvg width='80' height='80' viewBox='0 0 80 80' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M70 33.3328C70 56.6661 40 76.6661 40 76.6661C40 76.6661 10 56.6661 10 33.3328C10 25.3763 13.1607 17.7457 18.7868 12.1196C24.4129 6.49347 32.0435 3.33276 40 3.33276C47.9565 3.33276 55.5871 6.49347 61.2132 12.1196C66.8393 17.7457 70 25.3763 70 33.3328Z' fill='%23283D87'/%3e%3cpath d='M40 43.3334C45.5228 43.3334 50 38.8562 50 33.3334C50 27.8105 45.5228 23.3334 40 23.3334C34.4772 23.3334 30 27.8105 30 33.3334C30 38.8562 34.4772 43.3334 40 43.3334Z' fill='white'/%3e%3c/svg%3e";
+
+
+            //значек без балуна
+            const minskCoords = [53.9023, 27.5619];
+            const minskMarker = new ymaps.Placemark(
+                minskCoords,
+                null,
+                {
+                    iconLayout: 'default#image',
+                    iconImageHref: convertedPlacemarkActive,
+                    iconImageSize: [40, 40],
+                }
+            );
+
+            map.geoObjects.add(minskMarker);
+
+
+
+
+
+
+
+
+
+
+
+
+        });
+    }
+
+    Map();
+
+
+</script>
+</body>
+</html>

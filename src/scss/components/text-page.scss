@@ -1,0 +1,38 @@
+.text-page__content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  p {
+    color: #111;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  ul li {
+    margin-left: 20px;
+    list-style: disc;
+  }
+
+  ol li {
+    margin-left: 20px;
+    list-style: decimal;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.2;
+    color: #111;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+}

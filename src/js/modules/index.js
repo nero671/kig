@@ -92,10 +92,10 @@ const togglePopupWindows = () => {
     }
 
     if (
-      target.classList.contains('_overlay-bg') ||
+
       target.closest('.button-close')
     ) {
-      const popup = target.closest('._overlay-bg');
+      const popup = target.closest('._is-open');
 
       popup.classList.remove('_is-open');
       toggleBodyLock(false);
@@ -132,6 +132,10 @@ window.addEventListener('scroll', function() {
     }
   }
 });
+
+const catalogMenu = document.querySelector('.catalog-menu');
+
+catalogMenu?.addEventListener('click', () => catalogMenu.classList.toggle('active'));
 
 
 export {

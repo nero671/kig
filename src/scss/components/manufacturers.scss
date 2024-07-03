@@ -1,0 +1,96 @@
+.manufactures-page {
+  .intro-block__container img {
+    display: none;
+  }
+
+  .manufactures-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    &__item {
+      font-weight: 400;
+      font-size: 24px;
+      letter-spacing: 0.41em;
+      color: #000;
+      cursor: pointer;
+      transition: $standartTrans;
+
+      &:hover {
+        color: #283d87;
+      }
+    }
+  }
+
+  .manufactures-brands {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 30px;
+    gap: 30px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .pagination-btn {
+    display: none;
+  }
+}
+
+.manufactures-detail-wrapper {
+  margin-top: 100px;
+
+  @include media(700) {
+    margin-top: 30px;
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  p {
+    margin-top: 20px;
+    color: #111;
+  }
+
+  a {
+    margin-top: 20px;
+    background: #283d87;
+    color: #fff;
+
+    &:hover {
+      background: #fff;
+      color: #283d87;
+    }
+  }
+}
+
+@include media(1650) {
+  .manufactures-page .manufactures-filter {
+    gap: 7px;
+  }
+
+  .manufactures-page .manufactures-filter__item {
+    font-size: 12px;
+  }
+}
+
+@include media(991) {
+  .manufactures-page {
+    .manufactures-filter {
+      justify-content: flex-start;
+    }
+  }
+}
+
+@include media(700) {
+  .manufactures-page {
+    .manufactures-brands {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

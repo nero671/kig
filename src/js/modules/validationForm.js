@@ -33,7 +33,7 @@ const formValidation = () => {
         if (value.match(regEx)) return true;
 
         return false;
-    }, 'Вы можете ввести только латинские буквы, цифры, дефис, нижнее подчеркивание, точка (не первый или последний), символ "@". Например, test-8@gmail.com');
+    }, 'Неверный формат');
 
     Pristine.addValidator('only-number', (value) => {
         const regEx = /^\d+$/;
@@ -63,7 +63,7 @@ const formValidation = () => {
         if (!(value.length < 16)) return true;
 
         return false;
-    }, '');
+    }, 'Введите 10 цифр');
 
     Pristine.addValidator('only-number-optional', (value) => {
         const regEx = /^\d+$/;

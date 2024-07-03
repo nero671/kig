@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Доставка'
+})
+<body>
+<div class="wrapper">
+    @@include('html/header/header.html', {
+    "class": "active",
+    })
+    <main class="page addition-page delivery-page">
+        <div data-observ></div>
+
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__container">
+                <ul>
+                    <li>
+                        <a href="/">
+                            Главная
+                        </a>
+                    </li>
+
+                    <li>
+                        Доставка и оплата
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        @@include('html/components/intro-block/intro-block.html', {
+        "title": "Доставка и оплата",
+        "text": "Доставка по Московской области и за МКАД. <br> Стоимость доставки зависит от цены <br> и расстояния от МКАД.",
+        "src": ""
+        })
+
+        <section class="stage delivery-stage">
+            <div class="stage__container">
+
+                <div class="stage-wrapper">
+                    <div class="stage__item">
+                        <div class="stage-th">Стоимость заказа</div>
+                        <div class="stage-th">
+                            Стоимость доставки
+                        </div>
+                        <div class="stage-th">
+                            Срок доставки после получения предоплаты
+                        </div>
+                    </div>
+
+                    <div class="stage__item">
+                        <div class="stage-td">0-15 км от МКАД</div>
+                        <div class="stage-dt">
+
+                        </div>
+                        <div class="stage-td">
+                        </div>
+                    </div>
+
+                    <div class="stage__item">
+                        <div class="stage-td">до 100 000 руб.</div>
+                        <div class="stage-td">
+                            100 руб.
+                        </div>
+                        <div class="stage-td">
+                            1-3 рабочих дня
+                        </div>
+                    </div>
+
+                    <div class="stage__item">
+                        <div class="stage-td">от 100 000 руб. и выше</div>
+                        <div class="stage-td">
+                            Бесплатно
+                        </div>
+                        <div class="stage-td">
+                            1-3 рабочих дня
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="delivery-info">
+            <div class="delivery__container">
+                <div class="intro-block__title-wrapper">
+                    <p class="delivery-title">
+                        По вопросам заказов можно обратиться <br>
+                        по телефону:  +7 (495)-785-80-46
+                    </p>
+                    <div class="text delivery__text">
+                        Доставка в регионы РФ осуществляется транспортными компаниями. <br>
+                        Условия доставки зависят от веса и габаритов груза, наличия в регионе <br>
+                        склада транспортной компании и удаленности грузополучателя от склада.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('html/form/form.html', {
+        "title": "Оставить заявку <br> на подбор продукции",
+        "src": "images/slide2.png",
+        "file": "Прикрепить заявку на расчет"
+        })
+
+
+
+
+
+
+    </main>
+    @@include('html/footer/footer.html', {})
+    @@include('html/components/burger-menu/burger-menu.html', {})
+    @@include('html/components/popups/thanks-popup.html', {})
+    @@include('html/components/popups/form-popup.html', {})
+    @@include('html/components/popups/ring-popup.html', {})
+
+</div>
+@@include('html/script.html', {})
+</body>
+</html>

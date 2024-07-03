@@ -24,6 +24,7 @@
 
 .marquee__track {
   display: flex;
+  align-items: center;
   width: max-content;
   animation: marquee var(--speed, 15s) linear infinite var(--direction);
 }
@@ -41,7 +42,8 @@
 
 .marquee__content {
   display: flex;
-  gap:  6.875rem;
+  align-items: center;
+  gap:  4.875rem;
   width: max-content;
   padding: 0 calc(6.875rem / 2);
   word-spacing: 6.875rem;
@@ -81,6 +83,20 @@
   width: 0.0625rem;
   height: 100%;
   background-color: rgba(255,255,255, 0.2);
+}
+
+.logo-marquees__link {
+  &:hover img {
+    filter: grayscale(0);
+    opacity: 1;
+  }
+
+  img {
+    filter: grayscale(1);
+    opacity: 0.5;
+    transition: $standartTrans;
+
+  }
 }
 
 @media (prefers-reduced-motion) {

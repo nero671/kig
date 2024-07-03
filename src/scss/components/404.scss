@@ -1,0 +1,37 @@
+.error-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.error-img {
+  margin-right: 60px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.error__text {
+  font-weight: 400;
+  color: #111;
+}
+
+.error-btn {
+  color: #fff;
+  background: #283d87;
+  margin-top: 40px;
+}
+
+@include media(991) {
+  .error-content {
+    flex-direction: column;
+  }
+}
+
+@include media(700) {
+  .error-img {
+    margin-right: 20px;
+  }
+}

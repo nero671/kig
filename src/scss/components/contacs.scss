@@ -1,0 +1,108 @@
+.contacts__text {
+  font-weight: 400;
+  font-size: 22px;
+  color: #111;
+  opacity: 0.6;
+  margin-top: 60px;
+}
+
+.contacts__title {
+  font-size: 64px;
+}
+
+.contacts__info {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.3;
+  color: #111;
+  margin-top: 30px;
+}
+
+#map_with_balloon,
+.ymaps-2-1-79-map,
+.ymaps-2-1-79-map {
+  width: 600px !important;
+  height: 400px !important;
+}
+
+.contacts-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__info  a:last-child {
+  border-bottom: 2px solid #333;
+}
+
+.contacts-page {
+
+  .stage {
+    padding-bottom: 0;
+  }
+
+  .stage-text {
+    font-weight: 400;
+    font-size: 20px;
+    color: #111;
+    opacity: 0.6;
+    width: 900px;
+  }
+
+  .stage-title {
+    max-width: 100%;
+    width: 100%;
+    font-weight: 500;
+    font-size: 24px;
+    color: #111;
+  }
+
+  .stage-content {
+    max-width: 100%;
+    width: fit-content;
+    opacity: 1;
+
+    .stage-btn {
+      border: 2px solid #283d87;
+      border-radius: 40px;
+      width: max-content;
+      color: #283d87;
+      cursor: pointer;
+
+      &:hover {
+        background: #283d87;
+        color:#ffff;
+      }
+    }
+  }
+}
+
+@include media(1350) {
+  .contacts-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #map_with_balloon, .ymaps-2-1-79-map, .ymaps-2-1-79-map {
+    width: 100% !important;
+  }
+
+  .contacts-page .stage-title {
+    font-size: 16px;
+  }
+}
+
+@include media(991) {
+  .contacts-page {
+    .stage__item {
+      flex-direction: column;
+    }
+
+    .stage {
+      padding: 0;
+    }
+
+    .contacts__info {
+      font-size: 20px;
+    }
+  }
+}

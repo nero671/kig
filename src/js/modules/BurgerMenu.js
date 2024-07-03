@@ -14,8 +14,10 @@ class BurgerMenu extends Popup {
     if (this.burgerButton) {
       document.addEventListener('click', ({ target }) => {
         const menuWrapper = document.querySelector('.burger-menu');
+        const mobileMenuBtn = document.querySelector('.mobile-menu__btn');
+        const header = document.querySelector('.header');
+
         if (target.closest('.icon-menu')) {
-          const header = document.querySelector('.header')
           this.html.classList.toggle('menu-open');
 
           !header.classList.contains('active') ? header.classList.toggle('active') : '';
@@ -23,6 +25,11 @@ class BurgerMenu extends Popup {
           menuWrapper.classList.toggle('_is-open');
           this.toggleBodyLock(this.html.classList.contains('menu-open'));
         }
+
+        mobileMenuBtn.addEventListener('click', () => {
+          !header.classList.contains('active') ? header.classList.remove('active') : '';
+          this.html.classList.remove('menu-open');
+        })
       });
     }
   }

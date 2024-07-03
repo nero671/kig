@@ -15,7 +15,6 @@
     align-items: center;
     gap: 30px;
     padding: 30px;
-    max-width: 427px;
 
     img {
       transition: $standartTrans;
@@ -32,11 +31,11 @@
   }
 }
 
-@include media(1650) {
-  .advantages__text br {
-    display: none;
-  }
-}
+//@include media(1650) {
+//  .advantages__text br {
+//    display: none;
+//  }
+//}
 
 @include media(991) {
   .advantages-wrapper {
