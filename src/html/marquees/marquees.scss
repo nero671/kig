@@ -36,7 +36,7 @@
 .logo-marquees {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 25px;
   margin-top: 60px;
 }
 
@@ -45,13 +45,15 @@
   align-items: center;
   gap:  4.875rem;
   width: max-content;
-  padding: 0 calc(6.875rem / 2);
+  //padding: 0 calc(6.875rem / 2);
   word-spacing: 6.875rem;
   overflow: hidden;
 
 
   a {
     transition: $standartTrans;
+    height: 160px;
+    width: 428px;
 
     &.logo-marquees-svg-rect:hover svg g rect {
       fill: #0B5ED7;
@@ -94,8 +96,10 @@
   img {
     filter: grayscale(1);
     opacity: 0.5;
+    height: inherit;
+    width: inherit;
+    object-fit: contain;
     transition: $standartTrans;
-
   }
 }
 

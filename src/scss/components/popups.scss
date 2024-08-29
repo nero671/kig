@@ -16,6 +16,17 @@
     opacity: 1;
   }
 
+  &.map-popup {
+    .popup-close {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
   &-wrapper {
     background: #fff;
     padding: 60px;

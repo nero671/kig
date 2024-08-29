@@ -44,8 +44,15 @@
   gap: 30px;
   margin-top: 60px;
 
+  .news-intro__item:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   img {
     max-width: 100%;
+    min-width: 200px;
   }
 
   .news-intro__date {

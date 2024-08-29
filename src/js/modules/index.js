@@ -111,14 +111,16 @@ headerSearch?.addEventListener('click', (e) => {
   }
 });
 
+// Header Scroll
 window.addEventListener('scroll', function() {
   var header = document.querySelector('.header');
   var footer = document.querySelector('.footer');
+  const homePage = document.querySelector('.home-page');
 
   var footerPosition = footer.getBoundingClientRect().top;
   var windowHeight = window.innerHeight;
 
-  if (location.pathname === '/home.html') {
+  if (homePage) {
     if (window.scrollY > 50) {
       header.classList.add('active');
     } else {

@@ -10,8 +10,21 @@
     gap: 10px;
   }
 
+  .news-intro__item {
+    align-self: center;
+  }
+
   img {
     max-width: 100%;
+    //height: 377px;
+
+    @include media(1350) {
+      height: 185px;
+    }
+
+    @include media(600) {
+      height: 150px;
+    }
   }
 
   &__title {

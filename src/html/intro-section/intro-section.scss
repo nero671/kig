@@ -1,9 +1,35 @@
 .intro-section {
-  background-image: url("../images/main-bg.jpg");
-  background-repeat: no-repeat;
+  //background-image: url("../images/main-bg.jpg");
+  //background-repeat: no-repeat;
   height: 100vh;
   padding-top: calc($headerHeight) + 30px;
-  background-size: cover;
+  //background-size: cover;
+  position: relative;
+
+  .intro-bg {
+    display: none;
+  }
+
+  @include media(1350) {
+    background-image: url("../images/main-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: 1350px) {
+    .intro-bg {
+      position: absolute;
+      top: 0;
+      object-fit: cover;
+      z-index: -1;
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+
+
 
   &__contacts {
     display: flex;

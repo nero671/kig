@@ -88,5 +88,5 @@ dropdown();
 formValidation();
 setMaskForPhone();
 useAccordion(mobileAccordion);
-countNumAnim();
 useAccordion(accordion);
+countNumAnim();
