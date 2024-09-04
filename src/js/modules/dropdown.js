@@ -31,7 +31,7 @@ export const dropdown = () => {
 
     // Клик вне элементов - удаление класса 'active' у всех элементов
     document.addEventListener('click', function(e) {
-        console.log(e.target)
+        // console.log(e.target)
         if (!e.target.matches('.filter-dropdown')) {
             document.querySelectorAll('.filter-dropdown').forEach((item) => {
                 item.classList.remove('active');

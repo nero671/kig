@@ -111,6 +111,13 @@
   height: 40px;
   background: #fff;
 
+  span {
+    width: 175px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 10px;
+  }
+
   a {
     transition: $standartTrans;
 

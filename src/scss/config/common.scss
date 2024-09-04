@@ -77,6 +77,16 @@
   padding: 160px 0 30px;
 }
 
+ul,
+li {
+  margin-left: 10px;
+}
+
+ol,
+li {
+  margin-left: 10px;
+}
+
 @include media(700) {
   .vacancies-text {
     padding: 60px 0;

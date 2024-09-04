@@ -90,3 +90,54 @@ setMaskForPhone();
 useAccordion(mobileAccordion);
 useAccordion(accordion);
 countNumAnim();
+
+document.querySelectorAll('.js-dropdown').forEach((dropdown, index) => {
+    // Уникальный ключ для каждого dropdown
+    const storageKey = `selectedOption_${index}`;
+    const catalogMenu = document.querySelector('.catalog-menu');
+
+    // Функция для сохранения текста выбранной опции в localStorage
+    function saveOptionToLocalStorage(optionText) {
+        localStorage.setItem(storageKey, optionText);
+    }
+
+    // Функция для обновления текста в <span>
+    function updateOptionText(optionText) {
+        dropdown.querySelector('span').textContent = optionText;
+    }
+
+    // Функция для загрузки текста из localStorage и вставки его в <span> при инициализации
+    function loadOptionFromLocalStorage() {
+        const selectedOption = localStorage.getItem(storageKey);
+        if (selectedOption) {
+            updateOptionText(selectedOption);
+        }
+    }
+
+    // Функция для очистки текста в <span> и localStorage
+    function clearOption() {
+        localStorage.removeItem(storageKey); // Удаляем значение из localStorage
+        updateOptionText(''); // Очищаем текст в <span>
+    }
+
+    // Обработчик клика для каждого элемента js-option
+    dropdown.querySelectorAll('.js-option a').forEach(option => {
+        option.addEventListener('click', function() {
+            const optionText = this.textContent.trim();
+            saveOptionToLocalStorage(optionText); // Сохраняем текст в localStorage
+        });
+    });
+
+    // Загрузка текста при инициализации
+    loadOptionFromLocalStorage();
+
+    // Обработчик клика для ссылок внутри catalogMenu
+    catalogMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function() {
+            // При клике очищаем данные в localStorage и поля <span>
+            clearOption();
+        });
+    });
+});
+
+

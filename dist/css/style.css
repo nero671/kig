@@ -105,11 +105,6 @@ a:hover {
   text-decoration: none;
 }
 
-ul,
-li {
-  list-style: none;
-}
-
 img {
   vertical-align: top;
 }
@@ -597,6 +592,16 @@ body.lock {
   padding: 160px 0 30px;
 }
 
+ul,
+li {
+  margin-left: 10px;
+}
+
+ol,
+li {
+  margin-left: 10px;
+}
+
 /** aнимация keyframes */
 
 @-webkit-keyframes showHeader {
@@ -1058,6 +1063,7 @@ body.lock {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  list-style: none;
 }
 
 .breadcrumbs__container ul li,
@@ -1364,6 +1370,7 @@ body.lock {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 15px;
+  list-style: none;
 }
 
 .accordion__title ul li:first-child {
@@ -1601,12 +1608,17 @@ body.lock {
 }
 
 .manufactures-detail-wrapper a {
+  color: #283d87;
+}
+
+.manufactures-detail-wrapper a.btn-blue {
   margin-top: 20px;
   background: #283d87;
   color: #fff;
+  text-decoration: none;
 }
 
-.manufactures-detail-wrapper a:hover {
+.manufactures-detail-wrapper a.btn-blue:hover {
   background: #fff;
   color: #283d87;
 }
@@ -1762,6 +1774,13 @@ body.lock {
   width: 320px;
   height: 40px;
   background: #fff;
+}
+
+.filter-dropdown span {
+  width: 175px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 10px;
 }
 
 .filter-dropdown a {
@@ -2327,6 +2346,10 @@ body.lock {
   transition: 0.35s;
 }
 
+.burger-menu .accordion__content ul {
+  list-style: none;
+}
+
 .burger-menu .accordion__content ul li {
   padding: 5px 0;
 }
@@ -2474,6 +2497,7 @@ body.lock {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
+  list-style: none;
 }
 
 .pagination ul li {
@@ -3058,6 +3082,7 @@ body.lock {
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 30px;
+  list-style: none;
 }
 
 .header__menu .menu__list li {

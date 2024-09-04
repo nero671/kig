@@ -66,9 +66,14 @@
   }
 
   a {
+    color: #283d87;
+  }
+
+  a.btn-blue {
     margin-top: 20px;
     background: #283d87;
     color: #fff;
+    text-decoration: none;
 
     &:hover {
       background: #fff;
