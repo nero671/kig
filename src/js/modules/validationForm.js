@@ -147,15 +147,15 @@ const formValidation = () => {
 
             checkFormCheckBtns(form, event);
 
-            if (!valid) {
-                event.preventDefault();
-
-                event.target.querySelector('.form-control--error').scrollIntoView({ block: 'center' });
-            } else {
-                form.dispatchEvent(new CustomEvent('valid-form'), {
-                    detail: { valid: true },
-                });
-            }
+            // if (!valid) {
+            //     event.preventDefault();
+            //
+            //     // event.target.querySelector('.form-control--error').scrollIntoView({ block: 'center' });
+            // } else {
+            //     form.dispatchEvent(new CustomEvent('valid-form'), {
+            //         detail: { valid: true },
+            //     });
+            // }
         });
     });
 };
