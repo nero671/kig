@@ -1,13 +1,16 @@
 export const countNumAnim = () => {
     document.addEventListener("DOMContentLoaded", function() {
         function animateCounter(element) {
-            let target = parseInt(element.getAttribute("data-target"));
-            let duration = parseInt(element.getAttribute("data-duration"));
+            let target = parseInt(element?.getAttribute("data-target"));
+            let duration = parseInt(element?.getAttribute("data-duration"));
             let count = 0;
             let stepTime = Math.abs(Math.floor(duration / target));
 
             function updateCounter() {
-                element.textContent = count;
+                if (element) {
+                    element.textContent = count;
+                }
+
                 if (count < target) {
                     count++;
                     setTimeout(updateCounter, stepTime);

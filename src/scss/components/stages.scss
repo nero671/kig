@@ -100,3 +100,9 @@
     }
   }
 }
+
+.contacts-page .stage .stage__item:last-child {
+  .stage-title, .stage-content {
+    display: none;
+  }
+}

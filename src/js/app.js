@@ -95,6 +95,7 @@ document.querySelectorAll('.js-dropdown').forEach((dropdown, index) => {
     // Уникальный ключ для каждого dropdown
     const storageKey = `selectedOption_${index}`;
     const catalogMenu = document.querySelector('.catalog-menu');
+    const menuList = document.querySelector('.menu__list');
 
     // Функция для сохранения текста выбранной опции в localStorage
     function saveOptionToLocalStorage(optionText) {
@@ -132,12 +133,14 @@ document.querySelectorAll('.js-dropdown').forEach((dropdown, index) => {
     loadOptionFromLocalStorage();
 
     // Обработчик клика для ссылок внутри catalogMenu
-    catalogMenu.querySelectorAll('a').forEach(link => {
+    catalogMenu?.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', function() {
             // При клике очищаем данные в localStorage и поля <span>
             clearOption();
         });
     });
+
+    menuList.addEventListener('click', () => localStorage.removeItem(storageKey));
 });
 
 

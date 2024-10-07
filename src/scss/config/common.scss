@@ -110,3 +110,13 @@ li {
     padding: 60px 0 30px;
   }
 }
+
+a {
+  color: inherit;
+}
+
+.result-search__content-btn {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}

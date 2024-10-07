@@ -46,6 +46,10 @@
   font-size: 18px;
   text-align: center;
   color: #111;
+
+  &:hover {
+    color: #283d87;
+  }
 }
 
 .catalog-description {
@@ -180,6 +184,13 @@
     font-weight: 500;
     font-size: 18px;
     color: #111;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    height: 53px;
   }
 }
 

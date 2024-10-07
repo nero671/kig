@@ -31,3 +31,13 @@
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M4.5 10.1364L8.73529 14.5L16.5 6.5" stroke="white"/></svg>');
   }
 }
+
+.form-popup__content {
+  .custom-checkbox {
+    &:checked+label::before {
+      border-color: #aaacab;
+      background-color: transparent;
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M4.5 10.1364L8.73529 14.5L16.5 6.5" stroke="black"/></svg>');
+    }
+  }
+}

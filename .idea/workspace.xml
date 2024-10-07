@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="07d81d27-0fb2-47de-8636-5245a55984a2" name="Changes" comment="fixes">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gulp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-development/0.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-development/1.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-development/10.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-development/11.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-development/12.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-development/13.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-development/2.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-development/3.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-development/4.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-development/5.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-development/6.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-development/7.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-development/8.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-development/9.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-development/index.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-development/index.pack.old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-production/0.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-production/1.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-production/2.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-production/3.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-production/4.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-production/5.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-production/6.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-production/7.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-production/8.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-production/9.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-production/index.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.temporary_cache/default-production/index.pack.old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/brands.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/catalog-listinc-detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/catalog-listinc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/catalog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/contacts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/delivery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/404-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/404-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/404-bg.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/about-bg.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/brand-detail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/brand-detail.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/c1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/c1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/catalog/c1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/catalog/c10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/catalog/c11.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/catalog/c12.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/catalog/c2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/catalog/c3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/catalog/c4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/catalog/c5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/catalog/c6.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/catalog/c7.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/catalog/c8.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/catalog/c9.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/detailpng.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/detailpng.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/ekat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/ekat.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/form-bg.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/formBg2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m11.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m12.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m13.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m14.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m15.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m16.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m17.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m18.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m19.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m20.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m21.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m22.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m23.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m24.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m25.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m25.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m26.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m26.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m27.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m27.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m28.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m28.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m28.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m29.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m29.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m30.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m30.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m31.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m31.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m31.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m32.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m32.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m33.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m33.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m33.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m34.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m34.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m34.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m35.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m35.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m35.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m36.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m36.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m36.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m37.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m37.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m37.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m38.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m38.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m38.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m39.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m39.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m39.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m40.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m40.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m41.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m41.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m41.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m42.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m42.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m42.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m43.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m43.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m43.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m44.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m44.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m44.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m45.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m45.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m45.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m46.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m46.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m46.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m47.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m47.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m47.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m48.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m48.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m49.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m50.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m50.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m51.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m51.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m51.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m52.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m52.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m52.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m53.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m53.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m53.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m54.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m54.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m54.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m55.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m55.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m55.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m56.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m56.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m56.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m57.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m57.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m57.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m58.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m58.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m58.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m59.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m59.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m59.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m6.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m60.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m60.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m61.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m61.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m61.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m614.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m62.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m62.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m62.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m63.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m63.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m63.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m64.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m64.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m65.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m65.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m65.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m66.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m66.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m66.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m67.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m67.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m67.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m68.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m68.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m68.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m69.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m69.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m69.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m7.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m70.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m70.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m70.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m71.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m71.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m71.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m72.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m72.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m72.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m73.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m74.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m75.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m76.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m77.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m78.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m79.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m8.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/m9.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/main-bg.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/news/n1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/news/n2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/news/n3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/news/n4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/news/n5.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/news/n6.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/news/n7.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/p4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/p4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/p5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/p5.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/p6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/p6.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/product-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/product-bg.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/s1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/s1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/s2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/s2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/s3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/s3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/s4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/s4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/sam.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/sam.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/sklad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/sklad.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/slide01.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/slide02.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/slide03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/slide03.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/slide1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/slide2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/slide3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/slide3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/slider-bg.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/spec.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/spec1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/spec2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/spec3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/vac-bg.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/manufacturers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/manufactures-detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/text-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/brand-detail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/c1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/catalog/c1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/catalog/c10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/catalog/c11.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/catalog/c12.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/catalog/c2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/catalog/c3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/catalog/c4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/catalog/c5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/catalog/c6.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/catalog/c7.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/catalog/c8.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/catalog/c9.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/detailpng.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m11.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m12.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m13.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m14.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m15.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m16.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m17.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m18.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m19.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m20.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m21.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m22.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m23.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m24.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m25.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m26.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m27.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m28.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m28.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m29.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m30.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m31.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m31.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m32.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m33.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m33.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m34.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m34.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m35.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m35.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m36.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m36.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m37.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m37.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m38.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m38.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m39.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m39.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m40.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m41.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m41.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m42.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m42.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m43.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m43.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m44.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m44.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m45.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m45.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m46.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m46.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m47.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m47.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m48.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m49.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m50.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m51.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m51.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m52.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m52.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m53.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m53.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m54.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m54.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m55.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m55.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m56.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m56.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m57.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m57.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m58.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m58.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m59.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m59.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m6.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m60.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m61.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m61.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m614.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m62.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m62.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m63.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m63.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m64.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m65.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m65.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m66.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m66.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m67.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m67.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m68.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m68.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m69.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m69.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m7.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m70.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m70.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m71.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m71.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m72.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m72.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m73.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m74.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m75.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m76.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m77.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m78.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m79.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m8.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/m9.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/p4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/p5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/p6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/product-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/s1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/s2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/s3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/s4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/slide03.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/app.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/news-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/news-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/spec.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/spec.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/vacancies-empty.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/vacancies-empty.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/vacancies.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/vacancies.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulp/version.json" beforeDir="false" afterPath="$PROJECT_DIR$/gulp/version.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/footer/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/footer/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/modules/countNumbAnim.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/modules/countNumbAnim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/catalog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/catalog.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/custom-checkbox.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/custom-checkbox.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/stages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/stages.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/config/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/config/common.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2YnHAtQMqMrJWtAL07x4JSFlDD0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/stanislavkachalko/Sites/MySites/g-king/src/html/components/popups&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/html/components/popups" />
+      <recent name="$PROJECT_DIR$/src/images" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/dist" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07d81d27-0fb2-47de-8636-5245a55984a2" name="Changes" comment="" />
+      <created>1701154283833</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701154283833</updated>
+      <workItem from="1701154286216" duration="69000" />
+      <workItem from="1718895186953" duration="6589000" />
+      <workItem from="1719916239410" duration="3417000" />
+      <workItem from="1719999458959" duration="1628000" />
+      <workItem from="1720092323217" duration="785000" />
+      <workItem from="1720431199598" duration="4949000" />
+      <workItem from="1721208110469" duration="968000" />
+      <workItem from="1721384362048" duration="1168000" />
+      <workItem from="1722339910143" duration="2159000" />
+      <workItem from="1722587598821" duration="2529000" />
+      <workItem from="1723025868993" duration="892000" />
+      <workItem from="1723104588827" duration="13937000" />
+      <workItem from="1724242440471" duration="589000" />
+      <workItem from="1724656964706" duration="9000" />
+      <workItem from="1724748593612" duration="4336000" />
+      <workItem from="1724846013257" duration="681000" />
+      <workItem from="1724928913666" duration="2391000" />
+      <workItem from="1724939287332" duration="2916000" />
+      <workItem from="1725018908163" duration="742000" />
+      <workItem from="1725024862538" duration="55000" />
+      <workItem from="1725205625603" duration="1488000" />
+      <workItem from="1725344616709" duration="886000" />
+      <workItem from="1725385671607" duration="598000" />
+      <workItem from="1725434002448" duration="658000" />
+      <workItem from="1725632027533" duration="848000" />
+      <workItem from="1726644233226" duration="1412000" />
+      <workItem from="1726821693601" duration="1091000" />
+      <workItem from="1727080581768" duration="2673000" />
+      <workItem from="1727121133357" duration="1184000" />
+      <workItem from="1727335619130" duration="117000" />
+      <workItem from="1727336493839" duration="908000" />
+      <workItem from="1727353035823" duration="1990000" />
+      <workItem from="1727422661343" duration="2993000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
+  </component>
+</project>
