@@ -391,6 +391,10 @@ html {
   -webkit-scrollbar-gutter: stable;
 }
 
+span {
+  color: inherit;
+}
+
 body {
   background: #eceeed;
 }
@@ -1277,11 +1281,6 @@ a {
   height: 100%;
   max-width: 428px;
   max-height: 199px;
-}
-
-.contacts-page .stage .stage__item:last-child .stage-title,
-.contacts-page .stage .stage__item:last-child .stage-content {
-  display: none;
 }
 
 .thanks-block {

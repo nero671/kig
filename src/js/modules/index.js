@@ -139,6 +139,10 @@ const catalogMenu = document.querySelector('.catalog-menu');
 
 catalogMenu?.addEventListener('click', () => catalogMenu.classList.toggle('active'));
 
+document.getElementById('registration_file_default').addEventListener('change', function() {
+  var fileName = this.files.length > 1 ? this.files.length + ' files selected' : this.files[0].name;
+  document.querySelector('.custom-file-label span').textContent = fileName;
+});
 
 export {
   isWebp,
